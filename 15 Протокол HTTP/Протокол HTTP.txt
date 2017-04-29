@@ -40,3 +40,9 @@ Connection: close
 
 username=admin&password=secret
 
+//////////////////////////////////
+// Transfer-Encoding
+
+GET /stream HTTP/1.1
+Host: hexlet.local
+Transfer-Encoding: chunked
