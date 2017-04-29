@@ -1,3 +1,5 @@
+// Тело HTTP-запроса
+
 GET / HTTP/1.1
 Host: hexlet.local
 Content-Type: text/plain
@@ -15,4 +17,26 @@ Content-Length: 15
 Connection: close
 
 my request body
+
+//////////////////////////////////
+// Отправка форм
+
+POST /login HTTP/1.1
+Host: hexlettesthost.com
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 28
+Connection: close
+
+login=user&password=12345678%3D
+user[login]=user&user[password]=12345678%3D
+
+///////////////
+
+POST /session/new HTTP/1.1
+Host: hexlet.local
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 30
+Connection: close
+
+username=admin&password=secret
 
