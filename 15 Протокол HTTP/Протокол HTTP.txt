@@ -46,3 +46,20 @@ username=admin&password=secret
 GET /stream HTTP/1.1
 Host: hexlet.local
 Transfer-Encoding: chunked
+
+//////////////////////////////////
+// Передача данных query string
+
+GET /?key=value HTTP/1.1
+Host: hexlet.local
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 28
+Connection: close
+
+login=user&password=12345678
+
+///////////////
+
+GET /?key=value&another_key=another_value HTTP/1.1
+Host: hexlet.local
+
