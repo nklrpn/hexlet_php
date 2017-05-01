@@ -85,3 +85,13 @@ Connection: keep-alive
 
 POST /session/new HTTP/1.1
 Host: hexlet.local
+
+//////////////////////////////////
+// Базовая аутентификация
+
+GET /securefiles/ HTTP/1.1
+Host: hexlet.local
+Authorization: Basic aHR0cHdhdGNo0mY=
+
+///////////////
+
