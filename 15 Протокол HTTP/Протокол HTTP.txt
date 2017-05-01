@@ -94,4 +94,23 @@ Host: hexlet.local
 Authorization: Basic aHR0cHdhdGNo0mY=
 
 ///////////////
+// имя пользователя Aladdin, пароль open sesame;
 
+GET /admin/ HTTP/1.1
+Host: hexlet.local
+Authorization: Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==
+
+//////////////////////////////////
+// Cookies
+
+curl --head https://ru.hexlet.io
+
+GET /securefiles/ HTTP/1.1
+Host: hexlet.local
+Cookie: key=value&another_key=another_value
+
+///////////////
+
+GET /account HTTP/1.1
+Host: hexlet.local
+Cookie: name=user; secret=secret_hash
