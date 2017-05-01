@@ -63,3 +63,25 @@ login=user&password=12345678
 GET /?key=value&another_key=another_value HTTP/1.1
 Host: hexlet.local
 
+//////////////////////////////////
+// Перенаправления
+
+GET / HTTP/1.1
+Host: hexlet.io
+
+HTTP/1.1 301 Move Permanently
+Content-Type: text/html
+Date: Thu, 30 Jul 2015 21:54:20 GMT
+Location: https://hexlet.io/
+Server: nginx/1.9.2
+Content-Length: 184
+Connection: keep-alive
+
+<html>
+...
+</html>
+
+///////////////
+
+POST /session/new HTTP/1.1
+Host: hexlet.local
